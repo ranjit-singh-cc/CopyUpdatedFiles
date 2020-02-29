@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.IO;
 
 namespace CopyUpdatedFiles {
-	internal class Program {
+	internal class CopyUpdatedFilesMainClass {
 		private static void Main() {
 			Console.WriteLine(@"***********************************************************************************
 ***
 ***This Application will copy all the files whose last modified time is more than provided time
-***This excluded .vs folder, .dll and .exe, .exe.config, .cache, .CopyComplete, .user, .pdb, FileListAbsolute.txt files
-***This also list down the file which have todos
+***This excluded file extension mention in ignore file
 ***Will be useful while sharing the changed files for release
 ***
 ***********************************************************************************");
 			Console.WriteLine("\n");
+
+			string[] ignoredExtensions = null;
+			if (File.Exists("ignore-extensions.txt"))
+				ignoredExtensions = File.ReadAllLines("ignore-extensions.txt");
+
 			Console.WriteLine("Enter Source Path: ");
 			string sourcePath = Console.ReadLine();
 
@@ -30,7 +34,7 @@ namespace CopyUpdatedFiles {
 					int fileCount = 0;
 					IList<string> fileWithTodos = new List<string>();
 					foreach (string file in files) {
-						if (file.Contains("\\.vs\\") || file.EndsWith(".dll") || file.EndsWith(".exe") || file.EndsWith(".exe.config") || file.EndsWith(".cache") || file.EndsWith(".CopyComplete") || file.EndsWith(".user") || file.EndsWith(".pdb") || file.EndsWith(".FileListAbsolute.txt"))
+						if (file.Contains("\\.vs\\") || IsEndsWith(ignoredExtensions, file))
 							continue;
 
 						FileInfo info = new FileInfo(file);
@@ -59,6 +63,20 @@ namespace CopyUpdatedFiles {
 					Console.ReadKey();
 				}
 			}
+		}
+
+		private static bool IsEndsWith(IList<string> ignoredExtensions, string fileName) {
+			bool rvalue = false;
+			if (ignoredExtensions != null) {
+				foreach (string extension in ignoredExtensions) {
+					if (fileName.EndsWith(extension)) {
+						rvalue = true;
+						break;
+					}
+				}
+			}
+
+			return rvalue;
 		}
 	}
 }

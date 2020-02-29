@@ -1,6 +1,7 @@
-D:\My Projects\Task - Tool\ImportantProjects\CopyUpdatedFiles\CopyUpdatedFiles\bin\Debug\CopyUpdatedFiles.exe.config
-D:\My Projects\Task - Tool\ImportantProjects\CopyUpdatedFiles\CopyUpdatedFiles\bin\Debug\CopyUpdatedFiles.exe
-D:\My Projects\Task - Tool\ImportantProjects\CopyUpdatedFiles\CopyUpdatedFiles\bin\Debug\CopyUpdatedFiles.pdb
-D:\My Projects\Task - Tool\ImportantProjects\CopyUpdatedFiles\CopyUpdatedFiles\obj\Debug\CopyUpdatedFiles.csproj.CoreCompileInputs.cache
-D:\My Projects\Task - Tool\ImportantProjects\CopyUpdatedFiles\CopyUpdatedFiles\obj\Debug\CopyUpdatedFiles.exe
-D:\My Projects\Task - Tool\ImportantProjects\CopyUpdatedFiles\CopyUpdatedFiles\obj\Debug\CopyUpdatedFiles.pdb
+D:\Supporting Files\MyStuff\Github\CopyUpdatedFiles\bin\Debug\CopyUpdatedFiles.exe.config
+D:\Supporting Files\MyStuff\Github\CopyUpdatedFiles\bin\Debug\CopyUpdatedFiles.exe
+D:\Supporting Files\MyStuff\Github\CopyUpdatedFiles\bin\Debug\CopyUpdatedFiles.pdb
+D:\Supporting Files\MyStuff\Github\CopyUpdatedFiles\obj\Debug\CopyUpdatedFiles.csproj.CoreCompileInputs.cache
+D:\Supporting Files\MyStuff\Github\CopyUpdatedFiles\obj\Debug\CopyUpdatedFiles.exe
+D:\Supporting Files\MyStuff\Github\CopyUpdatedFiles\obj\Debug\CopyUpdatedFiles.pdb
+D:\Supporting Files\MyStuff\Github\CopyUpdatedFiles\bin\Debug\ignore-extensions.txt

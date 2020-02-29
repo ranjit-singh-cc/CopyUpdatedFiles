@@ -1,0 +1,8 @@
+﻿.dll
+.exe
+.exe.config
+.cache
+.CopyComplete
+.user
+.pdb
+.FileListAbsolute.txt
